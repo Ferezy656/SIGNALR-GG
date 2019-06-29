@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GGServer", "GGServer.csproj", "{E0CED4A8-504C-41CC-BF11-9D02EC2C7DFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GGClient", "..\GGClient\GGClient.csproj", "{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0CED4A8-504C-41CC-BF11-9D02EC2C7DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CED4A8-504C-41CC-BF11-9D02EC2C7DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CED4A8-504C-41CC-BF11-9D02EC2C7DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CED4A8-504C-41CC-BF11-9D02EC2C7DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB31103D-3587-4904-9DF0-DF73B7739AD8}
+	EndGlobalSection
+EndGlobal
