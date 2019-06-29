@@ -121,6 +121,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hub.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="WinFormsServer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GG.Common\GG.Common.csproj">
+      <Project>{17d0a293-26ec-48ea-8127-e1f27d79bb47}</Project>
+      <Name>GG.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

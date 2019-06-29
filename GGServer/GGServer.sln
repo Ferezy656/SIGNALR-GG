@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GGServer", "GGServer.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GGClient", "..\GGClient\GGClient.csproj", "{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Common", "..\GG.Common\GG.Common.csproj", "{17D0A293-26EC-48EA-8127-E1F27D79BB47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GC.Common.Tests", "..\GC.Common.Tests\GC.Common.Tests.csproj", "{EE68835B-CA1F-4907-8CD7-D3A4E0A6485E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CF197B-A5FC-4E84-8F17-79EC8BF2FE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D0A293-26EC-48EA-8127-E1F27D79BB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D0A293-26EC-48EA-8127-E1F27D79BB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D0A293-26EC-48EA-8127-E1F27D79BB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D0A293-26EC-48EA-8127-E1F27D79BB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE68835B-CA1F-4907-8CD7-D3A4E0A6485E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE68835B-CA1F-4907-8CD7-D3A4E0A6485E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE68835B-CA1F-4907-8CD7-D3A4E0A6485E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE68835B-CA1F-4907-8CD7-D3A4E0A6485E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

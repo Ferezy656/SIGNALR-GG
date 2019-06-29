@@ -1,13 +1,7 @@
-﻿using Microsoft.AspNet.SignalR.Client;
+﻿using GG.Common;
+using Microsoft.AspNet.SignalR.Client;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GGClient
@@ -16,7 +10,7 @@ namespace GGClient
     {
         private String UserName { get; set; }
         private IHubProxy HubProxy { get; set; }
-        const string ServerURI = "http://localhost:36225/signalr";
+        private readonly string ServerURITemplate = "http://localhost:{0}/signalr";
         private HubConnection Connection { get; set; }
 
         public WinFormsClient()
@@ -33,10 +27,11 @@ namespace GGClient
 
         private async void ConnectAsync()
         {
+            var ServerURI = ServerUriBuilder.PrepareServerUri(this.ServerURITemplate, this.textBox1.Text);
+
             Connection = new HubConnection(ServerURI);
             Connection.Closed += Connection_Closed;
             HubProxy = Connection.CreateHubProxy("MyHub");
-            //Handle incoming event from server: use Invoke to write to console from SignalR's thread 
             HubProxy.On<string, string>("AddMessage", (name, message) =>
                 this.Invoke((Action)(() =>
                     RichTextBoxConsole.AppendText(String.Format("{0} {1}: {2}" + Environment.NewLine, name, DateTime.Now ,message))
@@ -49,11 +44,9 @@ namespace GGClient
             catch (HttpRequestException)
             {
                 StatusText.Text = "Unable to connect to server: Start server before connecting clients.";
-                //No connection: Don't enable Send button or show chat UI 
                 return;
             }
 
-            //Activate UI 
             SignInPanel.Visible = false;
             ChatPanel.Visible = true;
             ButtonSend.Enabled = true;
@@ -63,9 +56,9 @@ namespace GGClient
 
         private void Connection_Closed()
         {
-            //Deactivate chat UI; show login UI.  
             this.Invoke((Action)(() => ChatPanel.Visible = false));
             this.Invoke((Action)(() => ButtonSend.Enabled = false));
+            this.Invoke((Action)(() => textBox1.Visible = true));
             this.Invoke((Action)(() => StatusText.Text = "You have been disconnected."));
             this.Invoke((Action)(() => SignInPanel.Visible = true));
         }
@@ -73,7 +66,6 @@ namespace GGClient
         private void SignInButton_Click(object sender, EventArgs e)
         {
             UserName = UserNameTextBox.Text;
-            //Connect to server (use async method to avoid blocking UI thread) 
             if (!String.IsNullOrEmpty(UserName))
             {
                 StatusText.Visible = true;
@@ -89,6 +81,11 @@ namespace GGClient
                 Connection.Stop();
                 Connection.Dispose();
             }
+        }
+
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

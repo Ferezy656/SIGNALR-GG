@@ -32,6 +32,8 @@
             this.TextBoxMessage = new System.Windows.Forms.TextBox();
             this.RichTextBoxConsole = new System.Windows.Forms.RichTextBox();
             this.ChatPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SignInPanel = new System.Windows.Forms.Panel();
             this.StatusText = new System.Windows.Forms.Label();
             this.SignInButton = new System.Windows.Forms.Button();
@@ -40,9 +42,9 @@
             this.ChatPanel.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             this.SuspendLayout();
-            //  
-            // ButtonSend 
-            //  
+            // 
+            // ButtonSend
+            // 
             this.ButtonSend.Enabled = false;
             this.ButtonSend.Location = new System.Drawing.Point(414, 10);
             this.ButtonSend.Name = "ButtonSend";
@@ -51,38 +53,56 @@
             this.ButtonSend.Text = "Send";
             this.ButtonSend.UseVisualStyleBackColor = true;
             this.ButtonSend.Click += new System.EventHandler(this.ButtonSend_Click);
-            //  
-            // TextBoxMessage 
-            //  
+            // 
+            // TextBoxMessage
+            // 
             this.TextBoxMessage.Location = new System.Drawing.Point(8, 12);
             this.TextBoxMessage.Name = "TextBoxMessage";
             this.TextBoxMessage.Size = new System.Drawing.Size(400, 20);
             this.TextBoxMessage.TabIndex = 2;
-            //  
-            // RichTextBoxConsole 
-            //  
+            // 
+            // RichTextBoxConsole
+            // 
             this.RichTextBoxConsole.Location = new System.Drawing.Point(8, 38);
             this.RichTextBoxConsole.Name = "RichTextBoxConsole";
             this.RichTextBoxConsole.ReadOnly = true;
             this.RichTextBoxConsole.Size = new System.Drawing.Size(481, 461);
             this.RichTextBoxConsole.TabIndex = 3;
             this.RichTextBoxConsole.Text = "";
-            //  
-            // ChatPanel 
-            //  
-
+            // 
+            // ChatPanel
+            // 
             this.ChatPanel.Controls.Add(this.RichTextBoxConsole);
             this.ChatPanel.Controls.Add(this.TextBoxMessage);
             this.ChatPanel.Controls.Add(this.ButtonSend);
             this.ChatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChatPanel.Location = new System.Drawing.Point(0, 0);
             this.ChatPanel.Name = "ChatPanel";
-            this.ChatPanel.Size = new System.Drawing.Size(501, 513);
+            this.ChatPanel.Size = new System.Drawing.Size(501, 537);
             this.ChatPanel.TabIndex = 4;
             this.ChatPanel.Visible = false;
-            //  
-            // SignInPanel 
-            //  
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 515);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Port:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(47, 512);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
+            // 
+            // SignInPanel
+            // 
+            this.SignInPanel.Controls.Add(this.textBox1);
+            this.SignInPanel.Controls.Add(this.label2);
             this.SignInPanel.Controls.Add(this.StatusText);
             this.SignInPanel.Controls.Add(this.SignInButton);
             this.SignInPanel.Controls.Add(this.UserNameTextBox);
@@ -90,20 +110,20 @@
             this.SignInPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SignInPanel.Location = new System.Drawing.Point(0, 0);
             this.SignInPanel.Name = "SignInPanel";
-            this.SignInPanel.Size = new System.Drawing.Size(501, 513);
+            this.SignInPanel.Size = new System.Drawing.Size(501, 537);
             this.SignInPanel.TabIndex = 4;
-            //  
-            // StatusText 
-            //  
+            // 
+            // StatusText
+            // 
             this.StatusText.Location = new System.Drawing.Point(12, 59);
             this.StatusText.Name = "StatusText";
             this.StatusText.Size = new System.Drawing.Size(477, 13);
             this.StatusText.TabIndex = 6;
             this.StatusText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.StatusText.Visible = false;
-            //  
-            // SignInButton 
-            //  
+            // 
+            // SignInButton
+            // 
             this.SignInButton.Location = new System.Drawing.Point(414, 22);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(75, 23);
@@ -111,31 +131,31 @@
             this.SignInButton.Text = "Sign In";
             this.SignInButton.UseVisualStyleBackColor = true;
             this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
-            //  
-            // UserNameTextBox 
-            //  
+            // 
+            // UserNameTextBox
+            // 
             this.UserNameTextBox.Location = new System.Drawing.Point(7, 24);
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.Size = new System.Drawing.Size(401, 20);
             this.UserNameTextBox.TabIndex = 4;
-            //  
-            // label1 
-            //  
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Enter user name:";
-            //  
-            // WinFormsClient 
-            //  
+            // 
+            // WinFormsClient
+            // 
             this.AcceptButton = this.ButtonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 513);
-            this.Controls.Add(this.ChatPanel);
+            this.ClientSize = new System.Drawing.Size(501, 537);
             this.Controls.Add(this.SignInPanel);
+            this.Controls.Add(this.ChatPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(517, 552);
@@ -161,7 +181,8 @@
         private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.TextBox UserNameTextBox;
         private System.Windows.Forms.Label StatusText;
-
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNet.SignalR;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Microsoft.Owin.Hosting;
-using Owin;
+﻿using GG.Common;
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -11,41 +8,42 @@ namespace GGServer
 {
     public partial class WinFormsServer : Form
     {
-        private IDisposable SignalR { get; set; }
-        const string ServerURI = "http://localhost:36225";
+        private Server server;
+        private readonly string serverUriTemplate = "http://localhost:{0}";
+        private string serverUri;
 
         internal WinFormsServer()
         {
             InitializeComponent();
+            this.server = new Server();
         }
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
+            this.serverUri = ServerUriBuilder.PrepareServerUri(this.serverUriTemplate, textBox1.Text);
+
             WriteToConsole("Starting server...");
             ButtonStart.Enabled = false;
-            Task.Run(() => StartServer());
+
+            try
+            {
+                Task.Run(() => server.StartServer(this.serverUri));
+            }
+            catch (TargetInvocationException)
+            {
+                WriteToConsole("Server failed to start. A server is already running on " + this.serverUri);
+                this.Invoke((Action)(() => ButtonStart.Enabled = true));
+                return;
+
+            }
+            this.Invoke((Action)(() => ButtonStop.Enabled = true));
+            WriteToConsole("Server started at " + this.serverUri);
         }
 
 
         private void ButtonStop_Click(object sender, EventArgs e)
         {
             Close();
-        }
-        private void StartServer()
-        {
-            try
-            {
-                SignalR = WebApp.Start(ServerURI);
-            }
-            catch (TargetInvocationException)
-            {
-                WriteToConsole("Server failed to start. A server is already running on " + ServerURI);
-                //Re-enable button to let user try to start server again 
-                this.Invoke((Action)(() => ButtonStart.Enabled = true));
-                return;
-            }
-            this.Invoke((Action)(() => ButtonStop.Enabled = true));
-            WriteToConsole("Server started at " + ServerURI);
         }
 
         internal void WriteToConsole(String message)
@@ -62,37 +60,11 @@ namespace GGServer
 
         private void WinFormsServer_FormClosing(object sender, FormClosingEventArgs e)
         {
+        }
 
-            if (SignalR != null)
-            {
-                SignalR.Dispose();
-            }
-        }
-    }
-
-    class Startup
-    {
-        public void Configuration(IAppBuilder app)
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            app.MapSignalR();
-        }
-    }
-
-    public class MyHub : Hub
-    {
-        public void Send(string name, string message)
-        {
-            Clients.All.addMessage(name, message);
-        }
-        public override Task OnConnected()
-        {
-            Program.MainForm.WriteToConsole("Client connected: " + Context.ConnectionId);
-            return base.OnConnected();
-        }
-        public async Task OnDisconnected()
-        {
-            Program.MainForm.WriteToConsole("Client disconnected: " + Context.ConnectionId);
-            await base.OnDisconnected(true);
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

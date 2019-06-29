@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Owin.Hosting;
+using System;
 
 namespace GGServer
 {
-    class Server
+    public class Server
     {
+        private IDisposable SignalR { get; set; }
+
+        public Server() { }
+
+        public void StartServer(string uri)
+        {
+            SignalR = WebApp.Start(uri);
+        }
+
+        public void StopServer()
+        {
+            if (SignalR != null)
+            {
+                SignalR.Dispose();
+            }
+        }
     }
 }
