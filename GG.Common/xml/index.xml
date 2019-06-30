@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="class_g_g_client_1_1_program" kind="class"><name>GGClient::Program</name>
+    <member refid="class_g_g_client_1_1_program_1a744674ecc345e377bf5b61957b7f0085" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_g_g_client_1_1_win_forms_client" kind="class"><name>GGClient::WinFormsClient</name>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a6ea65db62d544700d696007d7cf937aa" kind="property"><name>UserName</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a53fa8588067680c2fa21db44d79fc063" kind="property"><name>HubProxy</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a3417ea72a64920f31ea8e093781cd9f7" kind="property"><name>Connection</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a86b11a5cf558554205f887a07b1b055a" kind="variable"><name>ServerURITemplate</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a5e861261a06deb520ab0f9a0694fa1ef" kind="variable"><name>components</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1aa512d3dcdb2c2445238c4503218595c0" kind="variable"><name>ButtonSend</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a9470bcc91374627618fe600a066e6ddd" kind="variable"><name>TextBoxMessage</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1aa6836cf59f1f1ba4ccf1c49582ca4a04" kind="variable"><name>RichTextBoxConsole</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a0ae5f74e753cd26675b4e77ac600369b" kind="variable"><name>ChatPanel</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1adf87c49972c475e36069dab0ddf1bb49" kind="variable"><name>SignInPanel</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a18f356379f1dd1498dbe92b6e1d8cfc7" kind="variable"><name>label1</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a4cb67cbc7e950c9998c91169e2d34946" kind="variable"><name>SignInButton</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a5d5f32d8df91c1b23a4b9e8bf9348d37" kind="variable"><name>UserNameTextBox</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a46c09daebe12ea6a0b75d0430040eff8" kind="variable"><name>StatusText</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a85cbc973227a11b4523452fa3a8dfcbd" kind="variable"><name>label2</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a3722bcc2685b750463634adce2dd97ec" kind="variable"><name>textBox1</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a56b6c9cf412135ec64055334249f8d9a" kind="function"><name>WinFormsClient</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a7f6c8dbdd64bfd3f2cc06c7fd7c47711" kind="function"><name>ButtonSend_Click</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a439a242f3d7d72531be0e91f6bc74270" kind="function"><name>ConnectAsync</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a113b948084358b79eff3c1e29c343af7" kind="function"><name>Connection_Closed</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a4f72ad97f65234903518302955a5298a" kind="function"><name>SignInButton_Click</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a0dcd253fdb6f349ae2ea35293b7aff4a" kind="function"><name>WinFormsClient_FormClosing</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1aea334c719ed03b646be9bd7c39192fdd" kind="function"><name>TextBox1_KeyPress</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a2e47833e592cb5035aec673b5c46a2d2" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_g_g_client_1_1_win_forms_client_1a5e99ab1d8838b0419f6f0e22a91cedda" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="namespace_g_g_1_1_common" kind="namespace"><name>GG::Common</name>
+  </compound>
+  <compound refid="namespace_g_g_client" kind="namespace"><name>GGClient</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_1_1_signal_r_1_1_client" kind="namespace"><name>Microsoft::AspNet::SignalR::Client</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_http" kind="namespace"><name>System::Net::Http</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_win_forms_client_8cs" kind="file"><name>WinFormsClient.cs</name>
+  </compound>
+  <compound refid="_win_forms_client_8_designer_8cs" kind="file"><name>WinFormsClient.Designer.cs</name>
+  </compound>
+  <compound refid="dir_76b5f1254a73aca5102818dcc8257271" kind="dir"><name>SIGNALR-GG/GGClient</name>
+  </compound>
+  <compound refid="dir_efcbb8ac6a8aca8ec6df7f7b2434ab3b" kind="dir"><name>SIGNALR-GG</name>
+  </compound>
+</doxygenindex>

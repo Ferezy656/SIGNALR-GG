@@ -58,10 +58,6 @@ namespace GGServer
             richTextBox1.AppendText(message + Environment.NewLine);
         }
 
-        private void WinFormsServer_FormClosing(object sender, FormClosingEventArgs e)
-        {
-        }
-
         private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);

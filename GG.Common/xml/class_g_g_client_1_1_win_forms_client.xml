@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_g_g_client_1_1_win_forms_client" kind="class" language="C#" prot="public">
+    <compoundname>GGClient::WinFormsClient</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_g_g_client_1_1_win_forms_client_1a6ea65db62d544700d696007d7cf937aa" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String GGClient.WinFormsClient.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="11" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_g_g_client_1_1_win_forms_client_1a53fa8588067680c2fa21db44d79fc063" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IHubProxy</type>
+        <definition>IHubProxy GGClient.WinFormsClient.HubProxy</definition>
+        <argsstring></argsstring>
+        <name>HubProxy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="12" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_g_g_client_1_1_win_forms_client_1a3417ea72a64920f31ea8e093781cd9f7" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>HubConnection</type>
+        <definition>HubConnection GGClient.WinFormsClient.Connection</definition>
+        <argsstring></argsstring>
+        <name>Connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="14" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a86b11a5cf558554205f887a07b1b055a" prot="private" static="no" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string GGClient.WinFormsClient.ServerURITemplate</definition>
+        <argsstring></argsstring>
+        <name>ServerURITemplate</name>
+        <initializer>= &quot;http://localhost:{0}/signalr&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="13" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a5e861261a06deb520ab0f9a0694fa1ef" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer GGClient.WinFormsClient.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="8" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1aa512d3dcdb2c2445238c4503218595c0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button GGClient.WinFormsClient.ButtonSend</definition>
+        <argsstring></argsstring>
+        <name>ButtonSend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="175" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a9470bcc91374627618fe600a066e6ddd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox GGClient.WinFormsClient.TextBoxMessage</definition>
+        <argsstring></argsstring>
+        <name>TextBoxMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="176" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1aa6836cf59f1f1ba4ccf1c49582ca4a04" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RichTextBox</type>
+        <definition>System.Windows.Forms.RichTextBox GGClient.WinFormsClient.RichTextBoxConsole</definition>
+        <argsstring></argsstring>
+        <name>RichTextBoxConsole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="177" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a0ae5f74e753cd26675b4e77ac600369b" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel GGClient.WinFormsClient.ChatPanel</definition>
+        <argsstring></argsstring>
+        <name>ChatPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="178" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1adf87c49972c475e36069dab0ddf1bb49" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel GGClient.WinFormsClient.SignInPanel</definition>
+        <argsstring></argsstring>
+        <name>SignInPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="179" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a18f356379f1dd1498dbe92b6e1d8cfc7" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label GGClient.WinFormsClient.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="180" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a4cb67cbc7e950c9998c91169e2d34946" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button GGClient.WinFormsClient.SignInButton</definition>
+        <argsstring></argsstring>
+        <name>SignInButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="181" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a5d5f32d8df91c1b23a4b9e8bf9348d37" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox GGClient.WinFormsClient.UserNameTextBox</definition>
+        <argsstring></argsstring>
+        <name>UserNameTextBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="182" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a46c09daebe12ea6a0b75d0430040eff8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label GGClient.WinFormsClient.StatusText</definition>
+        <argsstring></argsstring>
+        <name>StatusText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="183" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a85cbc973227a11b4523452fa3a8dfcbd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label GGClient.WinFormsClient.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="184" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_g_client_1_1_win_forms_client_1a3722bcc2685b750463634adce2dd97ec" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox GGClient.WinFormsClient.textBox1</definition>
+        <argsstring></argsstring>
+        <name>textBox1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="185" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a56b6c9cf412135ec64055334249f8d9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GGClient.WinFormsClient.WinFormsClient</definition>
+        <argsstring>()</argsstring>
+        <name>WinFormsClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="16" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a7f6c8dbdd64bfd3f2cc06c7fd7c47711" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GGClient.WinFormsClient.ButtonSend_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ButtonSend_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="21" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a439a242f3d7d72531be0e91f6bc74270" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void GGClient.WinFormsClient.ConnectAsync</definition>
+        <argsstring>()</argsstring>
+        <name>ConnectAsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="28" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="28" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a113b948084358b79eff3c1e29c343af7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GGClient.WinFormsClient.Connection_Closed</definition>
+        <argsstring>()</argsstring>
+        <name>Connection_Closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="57" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a4f72ad97f65234903518302955a5298a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GGClient.WinFormsClient.SignInButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>SignInButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="66" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a0dcd253fdb6f349ae2ea35293b7aff4a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GGClient.WinFormsClient.WinFormsClient_FormClosing</definition>
+        <argsstring>(object sender, FormClosingEventArgs e)</argsstring>
+        <name>WinFormsClient_FormClosing</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>FormClosingEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="77" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="77" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1aea334c719ed03b646be9bd7c39192fdd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GGClient.WinFormsClient.TextBox1_KeyPress</definition>
+        <argsstring>(object sender, KeyPressEventArgs e)</argsstring>
+        <name>TextBox1_KeyPress</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>KeyPressEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="86" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a2e47833e592cb5035aec673b5c46a2d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GGClient.WinFormsClient.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="29" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="29" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_g_g_client_1_1_win_forms_client_1a5e99ab1d8838b0419f6f0e22a91cedda" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void GGClient.WinFormsClient.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" line="14" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Form</label>
+      </node>
+      <node id="2">
+        <label>GGClient.WinFormsClient</label>
+        <link refid="class_g_g_client_1_1_win_forms_client"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Form</label>
+      </node>
+      <node id="4">
+        <label>GGClient.WinFormsClient</label>
+        <link refid="class_g_g_client_1_1_win_forms_client"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="SIGNALR-GG/GGClient/WinFormsClient.cs" line="10" column="1" bodyfile="SIGNALR-GG/GGClient/WinFormsClient.cs" bodystart="9" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_g_g_client_1_1_win_forms_client_1aa512d3dcdb2c2445238c4503218595c0" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>ButtonSend</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a7f6c8dbdd64bfd3f2cc06c7fd7c47711" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>ButtonSend_Click</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a0ae5f74e753cd26675b4e77ac600369b" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>ChatPanel</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a5e861261a06deb520ab0f9a0694fa1ef" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>components</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a439a242f3d7d72531be0e91f6bc74270" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>ConnectAsync</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a3417ea72a64920f31ea8e093781cd9f7" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>Connection</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a113b948084358b79eff3c1e29c343af7" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>Connection_Closed</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a5e99ab1d8838b0419f6f0e22a91cedda" prot="protected" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>Dispose</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a53fa8588067680c2fa21db44d79fc063" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>HubProxy</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a2e47833e592cb5035aec673b5c46a2d2" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>InitializeComponent</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a18f356379f1dd1498dbe92b6e1d8cfc7" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>label1</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a85cbc973227a11b4523452fa3a8dfcbd" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>label2</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1aa6836cf59f1f1ba4ccf1c49582ca4a04" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>RichTextBoxConsole</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a86b11a5cf558554205f887a07b1b055a" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>ServerURITemplate</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a4cb67cbc7e950c9998c91169e2d34946" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>SignInButton</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a4f72ad97f65234903518302955a5298a" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>SignInButton_Click</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1adf87c49972c475e36069dab0ddf1bb49" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>SignInPanel</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a46c09daebe12ea6a0b75d0430040eff8" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>StatusText</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a3722bcc2685b750463634adce2dd97ec" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>textBox1</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1aea334c719ed03b646be9bd7c39192fdd" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>TextBox1_KeyPress</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a9470bcc91374627618fe600a066e6ddd" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>TextBoxMessage</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a6ea65db62d544700d696007d7cf937aa" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>UserName</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a5d5f32d8df91c1b23a4b9e8bf9348d37" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>UserNameTextBox</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a56b6c9cf412135ec64055334249f8d9a" prot="public" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>WinFormsClient</name></member>
+      <member refid="class_g_g_client_1_1_win_forms_client_1a0dcd253fdb6f349ae2ea35293b7aff4a" prot="private" virt="non-virtual"><scope>GGClient::WinFormsClient</scope><name>WinFormsClient_FormClosing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

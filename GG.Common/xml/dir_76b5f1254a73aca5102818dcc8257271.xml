@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_76b5f1254a73aca5102818dcc8257271" kind="dir">
+    <compoundname>SIGNALR-GG/GGClient</compoundname>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_win_forms_client_8cs">WinFormsClient.cs</innerfile>
+    <innerfile refid="_win_forms_client_8_designer_8cs">WinFormsClient.Designer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SIGNALR-GG/GGClient/"/>
+  </compounddef>
+</doxygen>

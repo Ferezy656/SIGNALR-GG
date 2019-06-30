@@ -10,7 +10,6 @@ namespace GGClient
     {
         private String UserName { get; set; }
         private IHubProxy HubProxy { get; set; }
-        private readonly string ServerURITemplate = "http://localhost:{0}/signalr";
         private HubConnection Connection { get; set; }
 
         public WinFormsClient()
@@ -27,7 +26,17 @@ namespace GGClient
 
         private async void ConnectAsync()
         {
-            var ServerURI = ServerUriBuilder.PrepareServerUri(this.ServerURITemplate, this.textBox1.Text);
+            string ServerURI = String.Empty;
+
+            try
+            {
+                ServerURI = ServerUriBuilder.GetServerUriForClient(this.textBox1.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Podany adres jest nieprawidłowy. Wyjątek: {ex.Message}");
+                return;
+            }
 
             Connection = new HubConnection(ServerURI);
             Connection.Closed += Connection_Closed;
@@ -81,11 +90,6 @@ namespace GGClient
                 Connection.Stop();
                 Connection.Dispose();
             }
-        }
-
-        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

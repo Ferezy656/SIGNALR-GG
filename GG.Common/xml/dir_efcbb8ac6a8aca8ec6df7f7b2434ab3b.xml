@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_efcbb8ac6a8aca8ec6df7f7b2434ab3b" kind="dir">
+    <compoundname>SIGNALR-GG</compoundname>
+    <innerdir refid="dir_76b5f1254a73aca5102818dcc8257271">SIGNALR-GG/GGClient</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SIGNALR-GG/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespace_g_g_client" kind="namespace" language="C#">
+    <compoundname>GGClient</compoundname>
+    <innerclass refid="class_g_g_client_1_1_program" prot="public">GGClient::Program</innerclass>
+    <innerclass refid="class_g_g_client_1_1_win_forms_client" prot="public">GGClient::WinFormsClient</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SIGNALR-GG/GGClient/Program.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>
